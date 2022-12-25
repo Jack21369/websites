@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Su-Gift</title>
+
+    <link rel="stylesheet" href="chri.css">
+    <link rel="icon" href="https://cdn.glitch.global/251dbc3a-b1d2-425b-acdc-9fd604988eff/favicon.ico?v=1667371382046">
+</head>
+
+<style>
+    body {
+        background-image: url("christmas.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .delivery {
+        border: 10px solid green;
+        border-radius: 30px;
+        margin-bottom: 20px;
+
+    }
+
+    .click {
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        height: 50px;
+        width: 200px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    .gift {
+        visibility: hidden;
+        height: 50vh;
+        border: 10px solid green;
+        border-radius: 30px;
+    }
+
+    .click:focus+.gift {
+        visibility: visible;
+    }
+
+    .santa,
+    .santa2 {
+        position: absolute;
+        z-index: 1;
+        height: 50vh;
+
+    }
+
+    .santa {
+        left: 2%;
+        top: 25%;
+    }
+
+    .santa2 {
+        right: 2%;
+        top: 25%;
+    }
+</style>
+
+<body>
+    <img class="delivery" src="delivery-date.jpg">
+    <button class="click">CLICK TO REVEAL GIFT</button>
+    <img class="gift" id="gift" src="gift.jpg">
+    <img class="santa" src="santa.webp">
+    <img class="santa2" src="santa.webp">
+</body>
+
+</html>
