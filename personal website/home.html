@@ -71,19 +71,19 @@
       <div class="select-menu about-me-container">
         <div class="bg about-me"></div>
         <button class="select-menu-text about-me-text"><a href="about-me.html" style="color: inherit;"
-            onclick="fadeAway()">Contact Me
+            onclick="fadeAway()" onmouseleave="resetOpacity()">Contact Me
           </a></button>
       </div>
       <div class="select-menu resume-container">
         <div class="bg resume"></div>
         <button class="select-menu-text resume-text"> <a href="resume-page.html" style="color: inherit;"
-            onclick="fadeAway()">Resume
+            onclick="fadeAway()" onmouseleave="resetOpacity()">Resume
           </a></button>
       </div>
       <div class="select-menu projects-container">
         <div class="bg projects"></div>
         <button class="select-menu-text projects-text"><a href="projects.html" style="color: inherit;"
-            onclick="fadeAway()">Projects
+            onclick="fadeAway()" onmouseleave="resetOpacity()">Projects
           </a></button>
       </div>
 
@@ -100,6 +100,10 @@
 
     function fadeAway() {
       document.getElementById("main-body").style.opacity = "0";
+    }
+
+    function resetOpacity() {
+      document.getElementById("main-body").style.opacity = "1";
     }
 
 
