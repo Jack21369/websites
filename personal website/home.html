@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<style>
+  a:link {
+    text-decoration: none !important;
+  }
+</style>
+
+
+
+<head>
+  <title>
+    Jack Lee
+  </title>
+  <link rel="icon" href="https://cdn.glitch.global/251dbc3a-b1d2-425b-acdc-9fd604988eff/favicon.ico?v=1667371382046">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/about.css">
+</head>
+
+<body>
+  <!-- <header class="header">
+    <div class="left-section">
+      <img class="current-user-icon" src="icons/milacon.ico">
+    </div>
+
+    <div class="right-section">
+      <a href="" class="home-button">
+        <div>Home</div>
+      </a>
+
+      <a href="" class="explore-button">
+        <div>Explore</div>
+      </a>
+
+      <a href="" class="contact-button">
+        <div>Contact</div>
+      </a>
+
+    </div>
+  </header> -->
+  <main>
+    <div class="intro-statement">
+      <div class="date" id="date"></div>
+      <div class="hello">
+
+        Hello!
+        <div class="arrow-container">
+          <a href="#main-body" class="arrow">
+            <i></i>
+          </a>
+        </div>
+      </div>
+      <img class="jed" src="backgrounds/grad2.png">
+      <div class="jackleestrip">
+        <div class="jackname"> Jack Lee </div>
+        <div class="jackname"> Jack Lee </div>
+        <div class="jackname"> Jack Lee </div>
+        <div class="jackname"> Jack Lee </div>
+        <div class="jackname"> Jack Lee </div>
+      </div>
+    </div>
+
+
+
+    <div class="main-body" id="main-body">
+
+      <div class="select-menu about-me-container">
+        <div class="bg about-me"></div>
+        <button class="select-menu-text about-me-text"><a href="about-me.html" style="color: inherit;"
+            onclick="fadeAway()">Contact Me
+          </a></button>
+      </div>
+      <div class="select-menu resume-container">
+        <div class="bg resume"></div>
+        <button class="select-menu-text resume-text"> <a href="resume-page.html" style="color: inherit;"
+            onclick="fadeAway()">Resume
+          </a></button>
+      </div>
+      <div class="select-menu projects-container">
+        <div class="bg projects"></div>
+        <button class="select-menu-text projects-text"><a href="projects.html" style="color: inherit;"
+            onclick="fadeAway()">Projects
+          </a></button>
+      </div>
+
+    </div>
+
+  </main>
+  <script>
+
+    date = new Date();
+    month = date.getMonth() + 1;
+    day = date.getDate();
+    year = date.getFullYear();
+    document.getElementById("date").innerHTML = month + "." + day + "." + year;
+
+    function fadeAway() {
+      document.getElementById("main-body").style.opacity = "0";
+    }
+
+
+  </script>
+</body>
+
+</html>
