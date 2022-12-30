@@ -15,29 +15,29 @@
     <hr class="line1">
     <div class="content">
 
-        <form class="message-sender">
+        <form class="message-sender" action="https://formsubmit.co/your@email.com" method="POST">
             <div class="message-sender-contents">
                 <div class="message-header">Send Me a Message Here!</div>
                 <div class="row1 first-last-name">
                     <div class="first-name">
                         <div class=" label first-name-text">First Name</div>
-                        <input class="input first-name-input" placeholder="First Name" required>
+                        <input class="input first-name-input" name="name" placeholder="First Name" required>
                     </div>
                     <div class="last-name">
                         <div class="label last-name-text">Last Name</div>
-                        <input class="input last-name-input" placeholder="Last Name" required>
+                        <input class="input last-name-input" name="lastname" placeholder="Last Name" required>
                     </div>
                 </div>
                 <div class="row2 guest-email">
                     <div class="row2-contents">
                         <div class=" label email-text">Your Email</div>
-                        <input class="input guest-email-input" placeholder="Your Email" required>
+                        <input class="input guest-email-input" name="email" placeholder="Your Email" required>
                     </div>
                 </div>
                 <div class="row3 message">
                     <div class="row3-contents">
                         <div class="label message-text">Your Message</div>
-                        <textarea class="textarea message-input" placeholder="Message" contenteditable
+                        <textarea class="textarea message-input" name="message" placeholder="Message" contenteditable
                             required></textarea>
                     </div>
                 </div>
