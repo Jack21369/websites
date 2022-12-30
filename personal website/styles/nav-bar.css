@@ -19,12 +19,12 @@
 
 .nav-home,
 .nav-contact-me,
+.nav-resume,
 .nav-projects {
-    text-decoration: none;
     font-size: 20px;
-    background-color: none;
-    text-align: center;
     font-weight: bold;
+    text-decoration: none;
+    text-align: center;
 }
 
 @keyframes loading {
@@ -58,5 +58,15 @@
 @keyframes up-to-down {
     100% {
         transform: translateY(1vh);
+    }
+}
+
+@keyframes nav-hover {
+    0% {
+        border-top: white solid 0px;
+    }
+
+    100% {
+        border-top: white solid 10px;
     }
 }
