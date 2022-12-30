@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="icon" href="https://cdn.glitch.global/251dbc3a-b1d2-425b-acdc-9fd604988eff/favicon.ico?v=1667371382046">
+    <link rel="stylesheet" href="styles/resume.css">
+    <link rel="stylesheet" href="styles/nav-bar.css">
+</head>
+
+<body>
+    <div class="line-decoration" id="line-decoration" onmouseover="displayBar()" onmouseleave="hideBar()">
+
+        <div class="nav-bar" id="nav-bar">
+            <a href="home.html" class="nav-home">
+                Home
+            </a>
+
+            <a href="about-me.html" class="nav-contact-me">
+                Contact
+            </a>
+
+            <a href="projects.html" class="nav-projects">
+                Projects
+            </a>
+        </div>
+
+    </div>
+    <div class="gif-container" id="gif-container"><img class="gif" id="gif"></div>
+    <button class="download">
+        <a class="download-text" href="backgrounds/Jack Lee Resume 2022.pdf" download>
+            <img class="download-icon" src="backgrounds/download-icon.png">DOWNLOAD
+        </a>
+    </button>
+    <div class="resume-container">
+        <div class="resume-section resume-text">My Resume</div>
+        <div class="resume">
+            <hr>
+            <div class="resume-section education" id="resume-section">
+                <div class="section-name education-text">
+                    <div class="sect-name">Education</div>
+                </div>
+                <div class="education content">
+                    <div class="inner-content education-content">
+                        <div class="title-name">UNIVERSITY OF CALIFORNIA, IRVINE</div>
+                        <ul class="details">
+                            <li class="inner-details">BS in Computer Science (GPA: 3.73)</li>
+                            <li class="inner-details">Irvine, CA</li>
+                            <li class="inner-details">Expected Graduation Date: June 2025</li>
+                        </ul>
+                    </div>
+
+                    <div class="inner-content education-content">
+                        <div class="title-name">RELATED COURSEWORK</div>
+                        <ul class="details">
+                            <li class="inner-details">Introduction to Programming (Python), Programming with Software
+                                Libraries (Python),
+                                Intermediate Programming (Python)</li>
+                            <li class="inner-details">Programming in C/C++ as a Second Language (C++), Introduction to
+                                Software Engineering, Introductory Computer Organization, Data Structure Implementation
+                                and Analysis(C++)</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="resume-section work-experience" id="resume-section">
+                <div class="section-name work-experience-text">
+                    <div class="sect-name">Work Experience</div>
+
+                </div>
+                <div class="content">
+                    <div class="inner-content work-experience-content google-step" id="google-step"
+                        onmouseover="displayGif(id)" onmouseleave="resetGif()">
+                        <div class="title-name">GOOGLE INC. |
+                            STEP Intern |
+                            San Francisco, CA |
+                            June 2022 - September 2022</div>
+                        <ul class="details">
+                            <li class="inner-details">In Google’s Core Developer Web organization responsible for
+                                libraries, tools and
+                                infrastructure
+                                for building secure, production-ready Google applications including the web protocol
+                                buffer
+                                implementation (mostly internal,
+                                protobuf-javascript is its external fork)</li>
+
+                            <li class="inner-details">Developed a reflection interface for internal javascript protobufs
+                                from a design, in
+                                close
+                                collaboration with another intern and Google software engineers.</li>
+
+                            <li class="inner-details">In particular, this library implemented conversions to and from
+                                Proto3 JSON.
+                                Coded entirely in TypeScript, following the Google software development workflow
+                                (writing/reviewing
+                                code, unit tests, debugging)</li>
+                        </ul>
+                    </div>
+                    <div class="inner-content work-experience-content" id="chipotle" onmouseover="displayGif(id)"
+                        onmouseleave="resetGif()">
+                        <div class="title-name">
+                            CHIPOTLE MEXICAN GRILL |
+                            Chipotle Crew - Grill |
+                            Oakland, CA |
+                            June 2021 - September 2021
+                        </div>
+                        <ul class="details">
+                            <li class="inner-details">Providing excellent customer service to 100+ daily customers and
+                                facilitated thousands of
+                                dollars in
+                                daily sales through honed
+                                soft skills: team communication, collaboration, task-management</li>
+
+                            <li class="inner-details">Experience using kitchen equipment, managing inventory, and
+                                performance under pressure</li>
+                        </ul>
+                    </div>
+                    <div class="inner-content work-experience-content" id="cssi" onmouseover="displayGif(id)"
+                        onmouseleave="resetGif()">
+
+
+                        <div class="title-name">
+                            GOOGLE INC. |
+                            Google CSSI Scholar |
+                            Oakland, CA - Remote |
+                            July 2021 - August 2021
+                        </div>
+                        <ul class="details">
+                            <li class="inner-details">Completed a 4-week JavaScript programming course with daily live
+                                code along projects facilitated
+                                by
+                                Google Engineers</li>
+
+                            <li class="inner-details">Completed 4 coding projects and 10+ code along extension projects
+                                based on p5 Library,
+                                individual
+                                creativity, replicating existing
+                                games/animations in collaboration with cohort peers: Google CSSI Projects (Labeled)</li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="resume-section related-experience" id="resume-section">
+                <div class="section-name related-experience-text">
+                    <div class="sect-name">Related Experience</div>
+                </div>
+                <div class="content">
+                    <div class="inner-content related-experience-content">
+                        <div class="title-name">
+
+                            HACK THE HOOD |
+                            Tech Foundations Member |
+                            Oakland, CA - Remote |
+                            June 2021 - July 2021
+
+                        </div>
+                        <ul class="details">
+                            <li class="inner-details">Completed 4-week tech foundations course led by Hack the Hood
+                                instructors</li>
+
+                            <li class="inner-details">Introduction to Django framework, game design, and Python through
+                                daily lab code along projects</li>
+
+                            <li class="inner-details">Joined to explore career pathways, expand technical skillset
+                                (Introduced to Python, VS Code, GitHub), and to educate myself
+                                about sociotechnical problems and technological solutions</li>
+                        </ul>
+                    </div>
+
+                    <div class="inner-content related-experience-content">
+                        <div class="title-name">
+
+                            BERKELEY CITY COLLEGE |
+                            Introduction to Web Design Student |
+                            Oakland, CA - Remote |
+                            February 2021 - May 2021
+
+                        </div>
+                        <ul class="details">
+                            <li class="inner-details">Using HTML and CSS, I constructed 10 website coding projects that
+                                resembled online shops and informational sites based on
+                                individual creativity</li>
+
+                            <li class="inner-details">Using HTML and CSS, I constructed 10 website coding projects that
+                                resembled online shops and informational sites based on
+                                individual creativity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume-section community-involvement" id="resume-section">
+                <div class="section-name community-involvement-text">
+                    <div class="sect-name">Community Involvement</div>
+                </div>
+
+                <div class="content">
+                    <div class="inner-content community-involvement-content">
+                        <div class="title-name">
+                            ASIAN YOUTH SERVICES COMMITTEE |
+                            Past Board Member and Sergeant-at-Arms |
+                            Oakland, CA |
+                            June 2019 - September 2021
+                        </div>
+                        <ul class="details">
+                            <li class="inner-details">Volunteered at youth-based volunteer organization in Oakland
+                                Chinatown in order to encourage community involvement and
+                                leadership amongst the youth</li>
+
+                            <li class="inner-details">2 years experience as a General Member and Board Member with
+                                responsibilities including management of Inventory, facilitation
+                                of community events/meetings, and communication with board to work out logistics of
+                                events</li>
+
+                            <li class="inner-details">Contributing to AYSC's projects to bolster sense of community
+                                and to provide support through virtual platforms during global
+                                pandemic: Mental Health workshops, Essential Worker Appreciation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume-section skills-rewards" id="resume-section">
+                <div class="section-name skills-rewards-text">
+                    <div class="sect-name">Skills & Awards</div>
+                </div>
+
+                <div class="content">
+                    <div class="inner-content skills-content">
+                        <div class="title-name">
+                            Skills
+                        </div>
+                        <ul class="details">
+                            <li class="inner-details">Technical Skills: JavaScript, TypeScript, C++,
+                                Python,
+                                HTML, CSS,
+                                Google Apps
+                                Windows</li>
+                            <li class="inner-details">Soft Skills: Effective Communicator
+                                Experience with collaboration
+                                Task Management
+                                Intermediate level
+                                Vietnamese</li>
+                        </ul>
+                    </div>
+
+                    <div class="inner-content awards-content">
+                        <div class="title-name">
+                            Awards
+                        </div>
+                        <ul class="details">
+                            <li class="inner-details">Oakland Promise Scholarship - 2021 (~600 recipients) |
+                                Marcus Foster Education Institute Scholarship - 2021 (43
+                                recipients) |
+                                AP Scholar Award - 2019 |
+                                Wa Sung Community Service Club: Jr. League Scholarship 2021 |
+                                Asian Youth Services Committee Member Appreciation Award
+                                2019</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="javascript/gif-loader.js"></script>
+    <script src="javascript/resume-loading-contents.js"></script>
+    <script src="javascript/nav-bar.js"></script>
+</body>
+
+</html>
