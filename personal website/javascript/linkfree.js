@@ -1,5 +1,5 @@
 function surprise() {
-    const surprises = ["Have a good day!", "Surprise! :D", "Boo!", "Ooga Booga"];
+    const surprises = ["", "Have a good day!", "Surprise! :D", "Boo!", "Ooga Booga"];
     randomIndex = Math.floor(Math.random() * (4 - 1) + 1);
     alert(surprises[randomIndex]);
 }
