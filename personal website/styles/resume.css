@@ -116,7 +116,7 @@ body {
 
 .content {
     width: 80%;
-    font-size: 18px;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
